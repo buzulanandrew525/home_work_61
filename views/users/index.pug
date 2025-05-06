@@ -1,0 +1,10 @@
+doctype html
+html
+  head
+    link(rel="stylesheet", href="/styles.css")
+    title Users
+  body
+    h1 User List
+    ul
+      each user in users
+        li: a(href=`/users/${user.id}`) #{user.name}
